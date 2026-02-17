@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Emre | Kişisel Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+}
+
+/* HEADER */
+header{
+    background:#020617;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+/* MENU */
+nav{
+    position:sticky;
+    top:0;
+    background:#020617;
+    padding:10px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:#cbd5f5;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* GENEL */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.section{
+    margin-bottom:50px;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+h2{
+    margin-top:0;
+}
+
+/* PROJELER */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* FİYAT */
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.price-card{
+    border:2px solid #0f172a;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.price{
+    font-size:26px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+/* BUTTON */
+button{
+    background:#0f172a;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e293b;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>Emre'nin Web Sitesi</h1>
+    <p>Basit • Temiz • Gece Teması</p>
+</header>
+
+<nav>
+    <a href="#home">Ana Sayfa</a>
+    <a href="#about">Hakkımda</a>
+    <a href="#projects">Projeler</a>
+    <a href="#pricing">Fiyatlar</a>
+    <a href="#contact">İletişim</a>
+</nav>
+
+<div class="container">
+
+    <!-- ANA SAYFA -->
+    <section class="section">
+        <div class="card">
+            <h2>Hoş Geldin 👋</h2>
+            <p>
+                Bu site sıfırdan HTML + CSS ile yapılmıştır.
+                Amacımız ileride bunu geliştirip internetten para kazanmak.
+            </p>
+        </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section id="about" class="section">
+        <div class="card">
+            <h2>Hakkımda</h2>
+            <p>
+                Ben Emre. Web sitesi yapmayı öğreniyorum.
+                Kendi projelerimi geliştirip global ve TR satış hedefliyorum.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projects" class="section">
+        <div class="card">
+            <h2>Projeler</h2>
+
+            <div class="projects">
+                <div class="project">
+                    <h3>Kişisel Web Site</h3>
+                    <p>HTML & CSS ile yapılmış tanıtım sitesi</p>
+                </div>
+
+                <div class="project">
+                    <h3>Landing Page</h3>
+                    <p>Satış odaklı tek sayfa site</p>
+                </div>
+
+                <div class="project">
+                    <h3>Blog Tasarımı</h3>
+                    <p>Yazı paylaşımı için modern blog</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FİYATLAR -->
+    <section id="pricing" class="section">
+        <div class="card">
+            <h2>Fiyatlar</h2>
+
+            <div class="pricing">
+                <div class="price-card">
+                    <h3>Başlangıç</h3>
+                    <div class="price">₺1.500</div>
+                    <p>Tek sayfa site</p>
+                    <button>Satın Al</button>
+                </div>
+
+                <div class="price-card">
+                    <h3>Standart</h3>
+                    <div class="price">₺3.000</div>
+                    <p>Çok sayfalı site</p>
+                    <button>Satın Al</button>
+                </div>
+
+                <div class="price-card">
+                    <h3>Pro</h3>
+                    <div class="price">₺6.000</div>
+                    <p>Özel tasarım</p>
+                    <button>Satın Al</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="contact" class="section">
+        <div class="card">
+            <h2>İletişim</h2>
+            <p>Mail: ciftciemre251@gmail.com</p>
+            <p><p></p>
+
+<a href="tel:05431807501">
+    <button><p><strong>Telefon:</strong> 0543 180 75 01</p>
+
+<a href="tel:05431807501">
+    <button>Ara</button>
+</a>
+</button>
+</a>
+</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Emre | Tüm Hakları Saklıdır
+</footer>
+
+</body>
+</html>
+
